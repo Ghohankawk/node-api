@@ -1,0 +1,54 @@
+{
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": "airbnb-base",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "linebreak-style": [0, "windows"], //换行风格
+    "indent": ["error", 4], //缩进风格
+    "no-plusplus": 0, //禁止使用++，--
+    "no-continue": 0, //禁止使用continue
+    "no-underscore-dangle": 0, //标识符不能以_开头或结尾
+    "no-param-reassign" : 0, //禁止给参数重新赋值
+    "import/no-dynamic-require": 0,
+    "no-unused-expressions": 0,
+    "max-len": [2, 300], //字符串最大长度
+    "no-bitwise": 0, //禁止使用按位运算符
+    "no-mixed-operators": 0,
+    "prefer-destructuring":0,
+    "class-methods-use-this": 0,
+    "no-restricted-syntax": 0,
+    "no-console": "off",
+    "global-require": 0 ,
+    "eqeqeq": "off",
+    "one-var": "off",
+    "guard-for-in": "off",
+    "no-await-in-loop":"warn",
+    "comma-dangle": 0,
+    "prefer-const": 0,
+    "valid-jsdoc": [
+      "warn",
+      {
+        "prefer": {
+          "arg": "param",
+          "argument": "param",
+          "class": "constructor",
+          "return": "return",
+          "virtual": "abstract"
+        },
+        "requireReturn": false,
+        "requireParamDescription": false,
+        "requireReturnDescription": false
+      }
+    ]
+  }
+}

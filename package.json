@@ -1,0 +1,47 @@
+{
+  "name": "fanyi-api",
+  "version": "1.0.0",
+  "description": "基于koa开发的翻译前端业务中台",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pm2 start ecosystem.config.js  --only fanyi-api-development --watch",
+    "test": "pm2 start ecosystem.config.js --only fanyi-api-test --watch",
+    "release": "pm2 start ecosystem.config.js --only fanyi-api-release --watch",
+    "production": "pm2 start ecosystem.config.js --only fanyi-api-production",
+    "start": "pm2 start",
+    "restart": "pm2 restart all",
+    "stopall": "pm2 stop all"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^3.0.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "ioredis": "^4.10.0",
+    "mysql": "^2.16.0",
+    "log4js": "^4.4.0",
+    "koa-morgan": "^1.0.1",
+    "koa-json": "^2.0.2",
+    "nodemailer": "^6.2.1",
+    "qs": "^6.7.0",
+    "axios": "^0.19.0",
+    "axios-extensions": "^3.0.6",
+    "lodash": "^4.17.11",
+    "crypto": "^1.0.1",
+    "moment": "^2.22.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "5.15.2",
+    "eslint-config-airbnb-base": "13.1.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "md5": "^2.2.1",
+    "mocha": "^5.2.0"
+  }
+}
